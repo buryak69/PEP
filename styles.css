@@ -1,0 +1,97 @@
+p {
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.pidor {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 40px;
+  animation: pidor 2s infinite;
+}
+
+@keyframes pidor {
+  0% {
+    color: orange;
+  }
+
+  10% {
+    color: purple;
+  }
+
+  20% {
+    color: red;
+  }
+
+  30% {
+    color: CadetBlue;
+  }
+
+  40% {
+    color: yellow;
+  }
+
+  50% {
+    color: coral;
+  }
+
+  60% {
+    color: green;
+  }
+
+  70% {
+    color: cyan;
+  }
+
+  80% {
+    color: DeepPink;
+  }
+
+  90% {
+    color: DodgerBlue;
+  }
+
+  100% {
+    color: orange;
+  }
+}
+
+.bt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin: -60px 0 0 -60px;
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
