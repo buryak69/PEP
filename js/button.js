@@ -11,4 +11,6 @@ function myFunction() {
      document.querySelector('button').classList.remove("bt");
      document.body.style.backgroundColor = "white"
    }
+   var audio = document.getElementById ("audio")
+	audio.play ();
  }
