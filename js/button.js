@@ -11,6 +11,14 @@ function myFunction() {
      document.querySelector('button').classList.remove("bt");
      document.body.style.backgroundColor = "white"
    }
-   var audio = document.getElementById ("audio")
-	audio.play ();
- }
+   var backgroundAudio = document.getElementById ("audio")
+	if (backgroundAudio.paused){
+		backgroundAudio.play();
+		//musicButton.textContent='Pause';
+	}else{
+		backgroundAudio.pause();
+		//musicButton.textContent='Play';
+	}
+	//if (!audio.isPlaying()) {audio.play();} 
+    //else audio.pause();
+}
